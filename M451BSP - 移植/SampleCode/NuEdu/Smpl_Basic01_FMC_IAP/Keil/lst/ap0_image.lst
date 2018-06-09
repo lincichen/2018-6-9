@@ -1,0 +1,88 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;/*-----------------------------------------------------
+                       ----------------------------------------------------*/
+    2 00000000         ;/*                                                     
+                                                                           */
+    3 00000000         ;/* Copyright(c) 2009 Nuvoton Technology Corp. All right
+                       s reserved.                                         */
+    4 00000000         ;/*                                                     
+                                                                           */
+    5 00000000         ;/*-----------------------------------------------------
+                       ----------------------------------------------------*/
+    6 00000000         
+    7 00000000         
+    8 00000000                 AREA             _image, DATA, READONLY
+    9 00000000         
+   10 00000000                 EXPORT           loaderImage1Base
+   11 00000000                 EXPORT           loaderImage1Limit
+   12 00000000                 EXPORT           loaderImage2Base
+   13 00000000                 EXPORT           loaderImage2Limit
+   14 00000000         
+   15 00000000                 ALIGN            4
+   16 00000000         
+   17 00000000         loaderImage1Base
+   18 00000000         
+   19 00000000         loaderImage1Limit
+   20 00000000         
+   21 00000000         loaderImage2Base
+   22 00000000         
+   23 00000000         loaderImage2Limit
+   24 00000000         
+   25 00000000         
+   26 00000000                 END
+Command Line: --16 --debug --xref --cpu=Cortex-M4.fp --apcs=interwork --depend=
+.\obj\ap0_image.d -o.\obj\ap0_image.o -IC:\Keil_v5\ARM\RV31\INC -IC:\Keil_v5\AR
+M\PACK\ARM\CMSIS\4.1.0\CMSIS\Include --list=.\lst\ap0_image.lst ap0_image.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+_image 00000000
+
+Symbol: _image
+   Definitions
+      At line 8 in file ap0_image.s
+   Uses
+      None
+Comment: _image unused
+loaderImage1Base 00000000
+
+Symbol: loaderImage1Base
+   Definitions
+      At line 17 in file ap0_image.s
+   Uses
+      At line 10 in file ap0_image.s
+Comment: loaderImage1Base used once
+loaderImage1Limit 00000000
+
+Symbol: loaderImage1Limit
+   Definitions
+      At line 19 in file ap0_image.s
+   Uses
+      At line 11 in file ap0_image.s
+Comment: loaderImage1Limit used once
+loaderImage2Base 00000000
+
+Symbol: loaderImage2Base
+   Definitions
+      At line 21 in file ap0_image.s
+   Uses
+      At line 12 in file ap0_image.s
+Comment: loaderImage2Base used once
+loaderImage2Limit 00000000
+
+Symbol: loaderImage2Limit
+   Definitions
+      At line 23 in file ap0_image.s
+   Uses
+      At line 13 in file ap0_image.s
+Comment: loaderImage2Limit used once
+5 symbols
+335 symbols in table

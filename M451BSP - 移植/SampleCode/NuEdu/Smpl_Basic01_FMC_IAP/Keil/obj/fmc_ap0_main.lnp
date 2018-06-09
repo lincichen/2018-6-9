@@ -1,0 +1,20 @@
+--cpu Cortex-M4.fp
+".\obj\system_m451series.o"
+".\obj\startup_m451series.o"
+".\obj\retarget.o"
+".\obj\fmc.o"
+".\obj\clk.o"
+".\obj\sys.o"
+".\obj\gpio.o"
+".\obj\timer.o"
+".\obj\uart.o"
+".\obj\ap0_main.o"
+".\obj\ap0_image.o"
+".\obj\flashprogrammer.o"
+".\obj\zmodem.o"
+".\obj\zmodemcrctab.o"
+".\obj\nuedu-basic01_led.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict
+--map --first='startup_M451Series.o(RESET)' --datacompressor=off --info=inline --entry Reset_Handler --diag_suppress 6969 --summary_stderr --info summarysizes --map --symbols
+--info sizes --info totals
+--list ".\lst\fmc_ap0_main.map" -o .\obj\fmc_ap0_main.axf
