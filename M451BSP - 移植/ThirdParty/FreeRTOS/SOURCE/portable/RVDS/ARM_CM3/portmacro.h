@@ -9,6 +9,7 @@
      *    FreeRTOS tutorial books are available in pdf and paperback.        *
      *    Complete, revised, and edited pdf reference manuals are also       *
      *    available.                                                         *
+     *                                                                       *
      *    Purchasing FreeRTOS documentation will not only help you, by       *
      *    ensuring you get running as quickly as possible and with an        *
      *    in-depth knowledge of how to use FreeRTOS, it will also help       *
